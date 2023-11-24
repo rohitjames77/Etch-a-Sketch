@@ -32,12 +32,14 @@ border: 2px solid black;
 
 }
 
-.displayControls {
+.Control-Panel {
 
     position: relative;
-    bottom: 54%;
+    bottom: 52%;
     left: 71%;
     height: 60%;
     width: 12%;
     border: 2px solid black;
 }
+
+
