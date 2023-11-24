@@ -5,29 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-A-Sketch</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lemonada:wght@600&family=Lobster&family=Oswald:wght@500&family=Roboto+Slab:wght@700&family=Skranji&display=swap" rel="stylesheet">
+
 </head>
 <body>
+    <h1 class="heading">Etch-A-Sketch</h1>
 <div class="displayParent">
     <div class="displayChild"></div>
 
 </div>
 <div class="Control-Panel">
-<label for="range" class="label"> </label>
-    <br>
-    <br>
- <input type="range" min="0" max="64" step="8" name="Div-Controls" class="range"> 
+
 
  <br>
  <button type="submit" class="black">black</button>
  <br>
- <button type="submit" class="Rainbow">Rainbow</button>
+ <button type="submit" class="rainbow"></button>
  <br>
- <button type="submit" class="chooseColor">Choose</button>
- <br>
+ 
  <input type="color" class="color-selection" value="#8F00FF">
  <br>
 <button type="reset" class="erase">Erase</button> 
-
+<br>
+<label for="range" class="label">Div Size  </label>
+<br>
+<input type="range" min="0" max="64" step="8" name="Div-Controls" class="range">
 
 
 
