@@ -1,4 +1,4 @@
-  
+
 body {
     position: fixed;
     height: 100vh;
@@ -17,9 +17,10 @@ body {
     margin-top: 1%;
     margin-bottom: -120px;
     text-shadow: 10px 13px 5px #000000;
-
+    
 }
 
+/* Display Styles................................................... */
 
 
 .displayParent {
@@ -37,9 +38,20 @@ box-shadow: 15px 10px 5px black;
 border-radius: 35px 65px;
 margin-top: -5px;
 }
+.screen {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: white;
+    height: 90%;
+    width:90%;
+    border: 2px solid #888888;
+    margin-left: 35px;
+    margin-top: 30px;
+}
 
 .displayChild{
-    background-color: white;
+    background-color:rgb(212, 202, 202);
 height: 98%;
 width: 95%;
 border-radius: 35px;
@@ -47,8 +59,20 @@ border: 2px solid black;
 
 }
 
-.Control-Panel {
 
+.gridDiv {
+    height:10.90359375px ;
+    width: 7.71578125px;
+    border: 1px solid #888888;
+
+}
+
+
+
+/* ControlPanel.......................................................... */
+
+.Control-Panel {
+    
     position: relative;
     bottom: 57%;
     left: 71%;
@@ -119,3 +143,4 @@ text-shadow: 10px 10px 5px #000000;
     border: 3px solid black;
     box-shadow: 10px 5px 5px ;
 }
+
