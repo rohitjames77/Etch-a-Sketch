@@ -38,38 +38,45 @@ box-shadow: 15px 10px 5px black;
 border-radius: 35px 65px;
 margin-top: -5px;
 }
-.screen {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    background-color: white;
-    height: 90%;
-    width:90%;
-    border: 2px solid #888888;
-    margin-left: 35px;
-    margin-top: 30px;
-}
 
 .displayChild{
     background-color:rgb(212, 202, 202);
-height: 98%;
-width: 95%;
-border-radius: 35px;
-border: 2px solid black;
-
+    height: 98%;
+    width: 95%;
+    border-radius: 35px;
+    border: 2px solid black;
+    
 }
 
-
-.gridDiv {
-    height:10.90359375px ;
-    width: 7.71578125px;
+.screen1 {
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: row;
+    background-color: white;
+    height: 90%;
+    width:90%;
     border: 1px solid #888888;
+    margin-left: 35px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    
+}
+.screenChild {
+   flex-grow: 1;
+   flex-shrink: 1;
+border: 1px solid #888888;  
 
 }
+
+
+
+
 
 
 
 /* ControlPanel.......................................................... */
+
 
 .Control-Panel {
     
