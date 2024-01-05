@@ -80,6 +80,10 @@ max-height: fit-content;
 
 }
 
+.screenChild:hover{
+    background-color: blue;
+}
+
 /* ControlPanel.......................................................... */
 
 

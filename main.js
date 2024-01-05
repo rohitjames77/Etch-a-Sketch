@@ -17,7 +17,7 @@ for (let i =0; i<= numSquare;i++){
     }
 }
 
-createGrid(8);
+createGrid(32);
 
 // let eventScreen = document.querySelector('.screen1');
 // eventScreen.addEventListener('click',mouseOver());
