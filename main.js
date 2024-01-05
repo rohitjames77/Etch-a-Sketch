@@ -1,24 +1,31 @@
 
 
 let screen = document.querySelector('.screen1');
+let screenHeight = screen.style.height;
+console.log(screenHeight);
+
 
 function createGrid (num){
     let numSquare =  num*num;
     console.log(numSquare);
 for (let i =0; i<= numSquare;i++){
     let screenChild = document.createElement('div');
+    screenChild.className = 'screenChild';
     screen.append(screenChild);
- screenChild.className= 'screenChild'; 
-let screenChildHeight=screen.clientHeight/numSquare;
-let screenChildWidth = screen.clientWidth/numSquare;
-screenChild.style.height = screenChildHeight +'px';
-screenChild.style.width = screenChildWidth +'px'; 
-
-
+ screenChild.style.height = screen.clientHeight/num+'px';
+ screenChild.style.width = screen.clientWidth/num+'px';
+    }
 }
 
+createGrid(8);
 
-}
+// let eventScreen = document.querySelector('.screen1');
+// eventScreen.addEventListener('click',mouseOver());
 
-createGrid(16);
+// function mouseOver() {
+// document.querySelector('.screenChild').style['background-color'] = 'blue';
+// }
+
+
+
 
