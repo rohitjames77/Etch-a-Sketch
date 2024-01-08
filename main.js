@@ -19,13 +19,13 @@ for (let i =0; i<= numSquare;i++){
 
 createGrid(32);
 
-// let eventScreen = document.querySelector('.screen1');
-// eventScreen.addEventListener('click',mouseOver());
-
-// function mouseOver() {
-// document.querySelector('.screenChild').style['background-color'] = 'blue';
-// }
+let allChildDiv= document.querySelectorAll('.screenChild');
 
 
-
+allChildDiv.forEach(function (allChildDiv){
+    allChildDiv.addEventListener('mouseover', function (){
+        allChildDiv.style.backgroundColor = "#0000ff";
+    })
+    
+})
 
