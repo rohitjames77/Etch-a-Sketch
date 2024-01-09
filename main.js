@@ -24,7 +24,7 @@ let allChildDiv= document.querySelectorAll('.screenChild');
 
 allChildDiv.forEach(function (allChildDiv){
     allChildDiv.addEventListener('mouseover', function (){
-        allChildDiv.style.backgroundColor = "#0000ff";
+        allChildDiv.style.backgroundColor = defaultBackground;
     })
     
 })
@@ -32,12 +32,13 @@ allChildDiv.forEach(function (allChildDiv){
 let selectionButtons = document.querySelector('.Control-Panel');
 selectionButtons.addEventListener('click', buttonsInput )
 
-
+let defaultBackground;
 function buttonsInput (event) {
 if (event.target.className == "black" ){
-    console.log('black');
+    defaultBackground = '#000000';
+}else if (event.target.value == 'reset'){
+    defaultBackground = 'FFFFFF'; 
 }
-else if ( event.target.className == 'rainbow'){
-    console.log('rainbow');
+
 }
-}
+
