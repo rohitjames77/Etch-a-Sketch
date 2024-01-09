@@ -17,7 +17,7 @@ for (let i =0; i<= numSquare;i++){
     }
 }
 
-createGrid(16);
+createGrid(32);
 
 let allChildDiv= document.querySelectorAll('.screenChild');
 
@@ -29,3 +29,15 @@ allChildDiv.forEach(function (allChildDiv){
     
 })
 
+let selectionButtons = document.querySelector('.Control-Panel');
+selectionButtons.addEventListener('click', buttonsInput )
+
+
+function buttonsInput (event) {
+if (event.target.className == "black" ){
+    console.log('black');
+}
+else if ( event.target.className == 'rainbow'){
+    console.log('rainbow');
+}
+}
