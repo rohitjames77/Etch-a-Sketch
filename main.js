@@ -17,7 +17,7 @@ for (let i =0; i<= numSquare;i++){
     }
 }
 
-createGrid(32);
+createGrid(16);
 
 let allChildDiv= document.querySelectorAll('.screenChild');
 
