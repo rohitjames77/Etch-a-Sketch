@@ -3,7 +3,7 @@
 let screen = document.querySelector('.screen1');
 let screenHeight = screen.style.height;
 console.log(screenHeight);
-
+let num;
 
 function createGrid (num){
     let numSquare =  num*num;
@@ -17,7 +17,7 @@ for (let i =0; i<= numSquare;i++){
     }
 }
 
-createGrid(32);
+createGrid(64);
 
 let allChildDiv= document.querySelectorAll('.screenChild');
 
@@ -41,6 +41,7 @@ if (event.target.className == "black" ){
 }
 else if (event.target.className == 'erase'){
     defaultBackground = '#FFFFFF';
+    
 }
 
 }
