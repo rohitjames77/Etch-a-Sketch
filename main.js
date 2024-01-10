@@ -36,8 +36,11 @@ let defaultBackground;
 function buttonsInput (event) {
 if (event.target.className == "black" ){
     defaultBackground = '#000000';
-}else if (event.target.value == 'reset'){
-    defaultBackground = 'FFFFFF'; 
+}else if (event.target.className == 'color-selection'){
+    defaultBackground = event.target.value; 
+}
+else if (event.target.className == 'erase'){
+    defaultBackground = '#FFFFFF';
 }
 
 }

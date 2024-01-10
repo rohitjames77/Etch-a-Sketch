@@ -81,7 +81,7 @@ max-height: fit-content;
 }
 
 .screenChild:hover{
-    background-color: blue;
+    background-color:white;
 }
 
 /* ControlPanel.......................................................... */
@@ -126,17 +126,6 @@ max-height: fit-content;
 font-family: 'Oswald', sans-serif;
 font-family: 'Roboto Slab', serif;
 text-shadow: 10px 10px 5px #000000;
-}
-
-.rainbow {
-    height: 120px;
-    width: 90px;
-    margin-bottom: 30px;
-    border-radius: 50%;
-    border: 3px solid black;
-    box-shadow: 10px 5px 5px ;
-    background-image: linear-gradient(to right, violet,indigo,blue,green,yellow,orange,red); 
-    ;
 }
 
 .color-selection {
