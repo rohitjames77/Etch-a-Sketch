@@ -92,9 +92,9 @@ max-height: fit-content;
 .Control-Panel {
     
     position: relative;
-    bottom: 57%;
+    bottom: 62%;
     left: 71%;
-    height: 70%;
+    height: 40%;
     width: 12%;
     display: flex;
     flex-direction: column;
@@ -177,6 +177,20 @@ color: #ffffff;
     background-color:  #000000;
     box-shadow: 0 3px #ede8e8;
     transform: translateY(5px);
+  }
+
+
+  .gridSelection {
+    position: relative;
+    bottom: 63%;
+    left: 71%;
+    height: 40%;
+    width: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
   }
 
   .smallGrid {
