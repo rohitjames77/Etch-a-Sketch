@@ -12,35 +12,25 @@ function buttonsInput (event) {
         defaultBackground = '#FFFFFF';
     }
 }
-// Grid Selection Event ........................................................
-
-
-
-
 // function for Div Grid Creation ...............................................
 
 let gridInput;
 let gridSelectionDiv = document.querySelector('.gridSelection');
-gridSelectionDiv.addEventListener('click',createGrid())
-
- 
-let screen = document.querySelector('.screen1');
-let screenHeight = screen.style.height;
-
-// Event function ....................................................................
-function createGrid (event){
-    if (event.target.className == 'smallGrid'){
-        gridInput = 64;
-        console.log(gridInput);
-    }else if (event.target.className == 'mediumGrid'){
-        gridInput= 32;
-    console.log(gridInput);
-    }
-    else if (event.target.className == 'largeGrid'){
-        gridInput = 18;
-        console.log(gridInput);
-    }
-
+console.log(gridSelectionDiv);
+gridSelectionDiv.addEventListener('click',demo);
+function demo (event){
+if (event.target.className == 'smallGrid'){
+            gridInput = 64;
+            console.log(gridInput);
+        }else if (event.target.className == 'mediumGrid'){
+                gridInput= 32;
+            console.log(gridInput);
+            }
+            else if (event.target.className == 'largeGrid'){
+                    gridInput = 18;
+                    console.log(gridInput);
+                }
+                let screen = document.querySelector('.screen1');            
     let numSquare = gridInput * gridInput;
     let fragment = document.createDocumentFragment();
     
@@ -54,7 +44,30 @@ function createGrid (event){
     }    
 
     screen.appendChild(fragment);
-}    
+    
+
+}
+
+ 
+
+// gridSelection Event function ....................................................................
+// function createGrid (gridInput){
+//                 let screen = document.querySelector('.screen1');            
+//     let numSquare = gridInput * gridInput;
+//     let fragment = document.createDocumentFragment();
+    
+//     for (let i = 0; i < numSquare; i++) {
+//         let screenChild = document.createElement('div');
+//         screenChild.className = 'screenChild';
+//         fragment.appendChild(screenChild);
+
+//         screenChild.style.height = screen.clientHeight / gridInput + 'px';
+//         screenChild.style.width = screen.clientWidth / gridInput + 'px';
+//     }    
+
+//     screen.appendChild(fragment);
+// } 
+// createGrid(64) ;  
 
 
 // Event listener for mouseHover effect.............................................
