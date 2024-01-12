@@ -1,11 +1,4 @@
-
-
-
-
-
-
-
-
+document.addEventListener('DOMContentLoaded', function () {
 let screen = document.querySelector('.screen1');
 let screenHeight = screen.style.height;
 console.log(screenHeight);
@@ -51,15 +44,14 @@ function demo (event){
     
 
 
-let allChildDiv= document.querySelectorAll('.screenChild');
+    screen.addEventListener('mouseover', function (event) {
+        if (event.target.classList.contains('screenChild')) {
+            event.target.style.backgroundColor = defaultBackground;
+        }
+    });
 
-allChildDiv.forEach(function (allChildDiv){
-    allChildDiv.addEventListener('mouseover', function (){
-        allChildDiv.style.backgroundColor = defaultBackground;
-    })
-    
-})
-let selectionButtons = document.querySelector('.Control-Panel');
+
+    let selectionButtons = document.querySelector('.Control-Panel');
 let defaultBackground;
 selectionButtons.addEventListener('click', buttonsInput )
 function buttonsInput (event) {
@@ -74,7 +66,7 @@ else if (event.target.className == 'erase'){
 }
 
 }
-
+});
 // // function for customizing background color as per button selection ................
 
 // let defaultBackground;
