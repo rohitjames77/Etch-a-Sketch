@@ -86,19 +86,6 @@ max-height: fit-content;
 
 }
 
-/* ControlPanel.......................................................... */
-
-.parentContainer{
-    position: relative;
-    bottom: 62%;
-    left: 71%;
-    height: 45%;
-    width: 15%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-}
 .Control-Panel {
     
     position: relative;
