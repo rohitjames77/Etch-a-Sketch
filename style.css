@@ -81,7 +81,7 @@ max-height: fit-content;
 }
 
 .screenChild:hover{
-    background-color:white;
+    background-color:white ;
     cursor:grab;
 
 }
